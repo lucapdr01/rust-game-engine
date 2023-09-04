@@ -1,4 +1,5 @@
 use rgame::*;
+use interfaces::*;
 
 fn main() {
     let mut x_position = 200.0;
@@ -7,7 +8,7 @@ fn main() {
     let mut x_direction = 1.0;
     let mut y_direction = 1.0;
 
-    let speed = 5.0;
+    let speed = 1.0;
 
     set_event_handler(move |context, event| match event {
         Event::Draw => {
