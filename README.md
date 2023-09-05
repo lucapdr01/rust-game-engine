@@ -1,6 +1,6 @@
 # Rust Game Engine
 
-![Rust Logo](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/298/hammer-and-wrench_1f6e0.png)
+![Rust Logo](https://github.com/rust-lang/rust-artwork/blob/bf0b3272f9ba8d22f7fd45e408496d05621b3b5c/logo/rust-logo-128x128-blk-v2.png)
 
 Welcome to the Rust Game Engine! This game engine is built in Rust and features a decoupled frontend layer utilizing HTML and JavaScript with WebGL capabilities. This README.md file will guide you through the project structure and usage.
 
@@ -63,5 +63,3 @@ The Rust Game Engine relies on several external libraries and tools:
 - [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API): The frontend leverages WebGL for rendering graphics in the browser.
 
 Happy gaming! 🎮✨
-
-![Game Controller Emoji](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/google/298/video-game_1f3ae.png)
