@@ -1,12 +1,12 @@
 use crate::kinematics::vector3::*;
 
-struct GameObject {
-    name : String,
-    position: Vector3,
+pub struct GameObject {
+    pub name : String,
+    pub position: Vector3,
 }
 
 impl GameObject{
-   fn new(name: String, position: Option<Vector3>) -> GameObject{
+   pub fn new(name: String, position: Option<Vector3>) -> GameObject{
 
     let position = match position {
         Some(pos) => pos,
@@ -15,7 +15,7 @@ impl GameObject{
     GameObject { name, position }
    }
 
-   fn translate(&mut self, destination: Vector3){
+   pub fn translate(&mut self, destination: Vector3){
     //TODO support linear update of render
     self.position = destination;
    }

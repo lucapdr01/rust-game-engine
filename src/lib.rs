@@ -1,6 +1,7 @@
 pub mod interfaces;
 pub mod context;
-mod kinematics;
+pub mod kinematics;
+pub mod scene;
 
 use interfaces::*;
 use context::*;
