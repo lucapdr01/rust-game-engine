@@ -1,5 +1,6 @@
 pub mod interfaces;
 pub mod context;
+mod kinematics;
 
 use interfaces::*;
 use context::*;
