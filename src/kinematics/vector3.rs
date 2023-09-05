@@ -1,22 +1,17 @@
 use std::f64;
 
-struct Vector3 {
-    x: f64,
-    y: f64,
-    z: f64,
+pub struct Vector3 {
+    pub x: f64,
+    pub y: f64,
+    pub z: f64,
 }
 
 impl Vector3{
-    fn new(x: f64, y: f64, z: f64) -> Vector3{
-        let vec = Vector3 {
-            x,
-            y,
-            z,
-        };
-        return vec;
+    pub fn new(x: f64, y: f64, z: f64) -> Vector3{
+        Vector3 { x, y, z }
     }
 
-    fn distance(&self, vec2 : &Vector3) -> f64 {
+    pub fn distance(&self, vec2 : &Vector3) -> f64 {
         let dx = f64::abs(self.x - vec2.x);
         let dy = f64::abs(self.y - vec2.y);
         let dz = f64::abs(self.z - vec2.z);
@@ -25,18 +20,18 @@ impl Vector3{
         return distance as f64;
     }
 
-    fn magnitude(&self) -> f64 {
+    pub fn magnitude(&self) -> f64 {
         let vec_zero = Vector3::new(0.0,0.0,0.0);
         let magnitude = self.distance(&vec_zero);
         return  magnitude;
     }
 
-    fn normalized(&self) -> Vector3 {
+    pub fn normalized(&self) -> Vector3 {
         let magnitude = self.magnitude() as f64;
         let normal_vec = Vector3::new(self.x/magnitude,self.y/magnitude,self.z/magnitude);
         return  normal_vec;
     }
-    fn to_string(&self) -> String {
+    pub fn to_string(&self) -> String {
         let message = format!("Vector ({}, {}, {})", self.x, self.y, self.z);
         return message;
     }
